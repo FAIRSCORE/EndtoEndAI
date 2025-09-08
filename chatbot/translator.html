@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinguaBuddy - Translator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>LinguaBuddy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="translator.html" class="active">Translator</a>
+      <a href="history.html">History</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main>
+   <h1>AI Study Buddy</h1>
+
+    <!-- Text input for translation -->
+    <label for="translatorInput">Enter text to translate or speak:</label>
+    <textarea id="translatorInput" placeholder="Enter text to translate or speak"></textarea>
+
+    <!-- Controls -->
+           <select id="language-select">
+                <option value="">Select a language</option>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="pt">Portuguese</option>
+                <option value="nl">Dutch</option>
+            </select>
+            <button id="micBtn" class="mic">🎤 Voice to Text</button>
+           <span id="micStatus" style="margin-left:10px; color:gray;"></span>
+            <button id="translateBtn" class="translate">Translate</button>
+    </div>
+    <!-- Translation output -->
+    <div class="tab-content" id="translateTab" style="display: block;">
+      <p style="font-size:40px;">🌐</p>
+        <div id="translation-output" class="translation-result"></div>
+    </div>
+  </main>
+
+    <div class="notification" id="notification"></div>
+
+  <!-- Unified app.js handles Translator logic -->
+  <script src="translator.js"></script>
+</body>
+</html>

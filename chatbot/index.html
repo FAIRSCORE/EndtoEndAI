@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinguaBuddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>LinguaBuddy</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="translator.html">Translator</a>
+      <a href="history.html">History</a>   
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main class="main-section">
+    <h1>AI Study Buddy</h1>
+
+    <!-- Chat Box -->
+    <div id="chat-box" class="chat-box"></div>
+
+    <!-- Input Area (always at bottom) -->
+    <div class="chat-controls">
+      <!-- Textbox for questions -->
+      <textarea id="user-input" placeholder="Type your question..."></textarea>
+
+      <!-- File Upload -->
+      <div class="file-upload">
+        <label for="file-input">Upload a file (PDF or text):</label>
+        <input type="file" id="file-input" accept=".pdf,.txt" />
+      </div>
+
+      <!-- Search Button -->
+      <button id="send-btn" class="search-btn">Search</button>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
